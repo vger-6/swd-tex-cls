@@ -1,2 +1,2 @@
 # swd-tex-cls
-TeX class for writing software design documents.
+TeX class to write software design documents.
