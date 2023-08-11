@@ -6,30 +6,48 @@
 
 \RequirePackage[a4paper]{geometry}
 \RequirePackage{graphicx}
-\RequirePackage{color}
+\RequirePackage{xcolor}
 \RequirePackage{fancyhdr}
 \RequirePackage{listings}
 
 \pagestyle{headings}
 
-\definecolor{code_green}{rgb}{0,0.6,0}
-%\definecolor{code_gray}{rgb}{0.5,0.5,0.5}
-\definecolor{code_mauve}{rgb}{0.58,0,0.82}
-
-\lstdefinestyle{c_code_style}{
-	basicstyle=\footnotesize,        
+\lstdefinestyle{swd_default_lst_style}{
+    %frame=tb,
+	basicstyle=\small\ttfamily,        
 	breakatwhitespace=false,
 	breaklines=true, 
-	commentstyle=\color{code_green},
 	keepspaces=true,   
-	keywordstyle=\color{blue},
-	language=C, 
-	morekeywords={*,...},
 	showspaces=false, 
 	showstringspaces=false,
 	showtabs=false,
 	stepnumber=2,
-	stringstyle=\color{code_mauve},
 	tabsize=2
 }
 
+\definecolor{swd_cpp_comment_color}{RGB}{2, 112, 10}
+\definecolor{swd_cpp_keyword_color}{RGB}{108, 48, 130}
+
+\lstdefinestyle{swd_cpp_lst_style}{
+	style=swd_default_lst_style,
+	language=C++,
+    commentstyle=\color{swd_cpp_comment_color},
+    keywordstyle=\color{swd_cpp_keyword_color},
+    stringstyle=\color{red},
+    emph={void, signed, unsigned, bool, char, short, int, long, float, double},
+    emphstyle={\color{blue}},
+    escapechar=\&
+}
+
+%\definecolor{swd_arduino_keyword_color}{RGB}{255, 165, 0}
+
+%\lstdefinestyle{swd_arduino_lst_style}{
+%	style=swd_cpp_lst_style,
+%    % keyword highlighting
+%    classoffset=1, % starting new class
+%    morekeywords={noTone},
+%    keywordstyle=\color{swd_arduino_keyword_color},
+%    classoffset=0,
+%}
+
+\lstset{style=swd_default_lst_style}
