@@ -35,8 +35,7 @@
     keywordstyle=\color{swd_cpp_keyword_color},
     stringstyle=\color{red},
     emph={void, signed, unsigned, bool, char, short, int, long, float, double},
-    emphstyle={\color{blue}},
-    escapechar=\&
+    emphstyle={\color{blue}}
 }
 
 %\definecolor{swd_arduino_keyword_color}{RGB}{255, 165, 0}
