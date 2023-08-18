@@ -6,6 +6,7 @@
 
 \RequirePackage[a4paper]{geometry}
 \RequirePackage{graphicx}
+\RequirePackage{float}
 \RequirePackage{xcolor}
 \RequirePackage{fancyhdr}
 \RequirePackage{listings}
