@@ -10,8 +10,14 @@
 \RequirePackage{xcolor}
 \RequirePackage{fancyhdr}
 \RequirePackage{listings}
+\RequirePackage{hyperref}
 
 \pagestyle{headings}
+
+\hypersetup{
+    colorlinks = true,
+    linkcolor = {blue}
+}
 
 \lstdefinestyle{swd_default_lst_style}{
     %frame=tb,
