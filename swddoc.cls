@@ -11,6 +11,7 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{listings}
 \RequirePackage{hyperref}
+\RequirePackage{titlesec}
 
 \pagestyle{headings}
 
@@ -18,6 +19,19 @@
     colorlinks = true,
     linkcolor = {blue}
 }
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\titleformat{\subparagraph}
+{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\subparagraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 \lstdefinestyle{swd_default_lst_style}{
     %frame=tb,
